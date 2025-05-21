@@ -1,0 +1,78 @@
+body {
+  background: #642904;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Back Button ===== */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ab6a42;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #642904;
+  color: #fff;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-section h2,
+.contact-section .text-muted {
+  color: white !important;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+.contact-info h4 {
+  margin-bottom: 20px;
+  color: #642904;
+}
+.form-control, .btn {
+  border-radius: 10px;
+}
+.btn-primary {
+  background-color: #ab6a42;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #ab6a42;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}

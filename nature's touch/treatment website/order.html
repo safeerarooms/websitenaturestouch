@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+  <body>
+    <div class="login-right">
+      <button onclick="history.back()" class="back-button">← Back</button>
+    </div>
+
+    <div class="cart-container">
+      <h1>Shopping Cart</h1>
+      <div class="cart-content">
+        <div class="cart-items">
+          <!-- Cart Item 1 -->
+          <div class="cart-item">
+            <img src="pink asset/produk2.png" alt="Therapy Set" />
+            <div class="details">
+              <p class="product-name"> Therapy Set </p>
+              <p class="product-desc">Set : Hot Stone Therapy </p>
+            </div>
+            <div class="quantity-control">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <p class="price">$50 </p>
+            <button class="remove">🗑️</button>
+          </div>
+
+        <!-- Order Summary -->
+        <div class="summary-box">
+          <h2>Order Summary</h2>
+          <form id="checkout-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="date" name="date" required />
+            <input type="text" placeholder="Discount voucher" />
+            <button class="apply-btn" type="button">Apply</button>
+
+            <div class="summary-detail">
+              <p>Sub Total: <span>$50</span></p>
+              <p>Discount (5%): <span>-$2.50</span></p>
+              <p> Add On : <span>$00.00 </span></p>
+              <hr />
+              <p class="total">Total: <span>$47.5 USD</span></p>
+            </div>
+            <p class="note">✅ New Energy Unlocked.</p>
+            <button class="checkout-btn" type="submit"> Payment Now </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

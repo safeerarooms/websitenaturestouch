@@ -1,0 +1,86 @@
+body {
+  background-color: #642904;
+}
+/* ===== Back Button ===== */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ab6a42;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #642904;
+  color: #fff;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.team-section {
+  padding: 60px 0;
+  
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ab6a42;
+}
+ .team-section .team-title .text-muted {
+  color: white !important;
+}
+
+
+.team-card {
+  background:#f8f9fa;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.team-info h5 {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: 642904;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color:#ab6a42;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #642904;
+}

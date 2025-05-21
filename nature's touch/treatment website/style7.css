@@ -1,0 +1,255 @@
+/* ===== Global Styles ===== */
+body {
+  background-image: url("pink asset/background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  color: #642904;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Back Button ===== */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ab6a42;
+  color: #642904;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #642904;
+  color: #fff;
+}
+
+/* ===== Main Cart Container ===== */
+.cart-container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(171, 106, 66, 0.4);
+  padding: 30px;
+  width: 1000px;
+}
+
+.cart-container h1 {
+  text-align: center;
+  color: #642904;
+  margin-bottom: 30px;
+}
+
+.cart-content {
+  display: flex;
+  gap: 30px;
+}
+
+/* ===== Cart Items Section ===== */
+.cart-items {
+  flex: 2;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(171, 106, 66, 0.3);
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.details {
+  flex: 1;
+  text-align: left;
+}
+
+.product-name {
+  font-weight: bold;
+  color: #642904;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #ab6a42;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ab6a42;
+  color: white;
+  cursor: pointer;
+}
+
+.price {
+  width: 80px;
+  font-weight: bold;
+}
+
+.remove {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ab6a42;
+}
+
+.update-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ab6a42;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ===== Order Summary Section ===== */
+.summary-box {
+  flex: 1;
+  background-color: #fff4e6;
+  padding: 25px;
+  border-radius: 16px;
+  color: #642904;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #642904;
+}
+
+/* ===== Checkout Form ===== */
+#checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#checkout-form input[type="text"],
+#checkout-form input[type="date"] {
+  width: 90%;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1px solid #ab6a42;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #642904;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#checkout-form input::placeholder {
+  color: #ab6a42;
+}
+
+#checkout-form input:focus {
+  border-color: #ab6a42;
+  outline: none;
+  box-shadow: 0 0 4px rgba(171, 106, 66, 0.5);
+}
+
+#checkout-form hr {
+  border: none;
+  border-top: 1px solid #ab6a42;
+  margin: 10px 0;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ab6a42;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #642904;
+}
+
+/* Summary Texts */
+.summary-detail {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.summary-detail p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.note {
+  font-size: 13px;
+  color: #ab6a42;
+  margin-top: 10px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #642904;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #4a2102;
+}
+
+/* ===== Responsive Design ===== */
+@media screen and (max-width: 768px) {
+  .cart-content {
+    flex-direction: column;
+  }
+
+  .cart-container {
+    width: 100%;
+    padding: 20px;
+  }
+}

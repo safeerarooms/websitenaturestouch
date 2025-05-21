@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ===== Back Button ===== */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ab6a42;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #642904;
+  color: #fff;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero-highlight {
+  background: url('pink asset/slide4.png') center/cover no-repeat;
+  height: 450px;
+  position: relative;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.hero-highlight .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Umum */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #381805; /* Coklat gelap */
+  color: white;
+}
+
+/* Hero Section */
+.hero-highlight {
+  background-color: #ab6a42; 
+  height: 60vh;
+  position: relative;
+}
+
+.hero-highlight .overlay {
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.hero-highlight .container {
+  z-index: 1;
+}
+
+.hero-highlight h1,
+.hero-highlight p {
+  color: white;
+}
+
+
+.btn.btn-warning,
+.btn.btn-warning:focus,
+.btn.btn-warning:hover {
+  background-color: #ffffff !important;
+  color: #ab6a42 !important;
+  border: 1px solid #5d4037;
+  transition: all 0.3s ease;
+}
+
+
+.card.bg-dark {
+  background-color: #ab6a42 !important; 
+  border: none;
+  color: white;
+}
+
+
+.card .card-title,
+.card .card-text {
+  color: white;
+}
+
+
+.btn-detail {
+  background-color: white !important;
+  color: #ab6a42 !important;
+  border: 1px solid #ab6a42;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-detail:hover {
+  background-color: #f5f5f5 !important;
+  color: #642904 !important;
+}
+
+
+.modal-content.bg-dark {
+  background-color: #381805 !important;
+  color: white;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+
+@media (max-width: 768px) {
+  .hero-highlight {
+    height: auto;
+    padding: 3rem 0;
+  }
+}

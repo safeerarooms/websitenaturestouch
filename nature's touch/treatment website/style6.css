@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+  background-image: url('pink asset/background.png'); 
+  background-size: cover; 
+  background-position: center center; 
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  
+  display: flex;
+  justify-content: center; /* untuk horizontal center */
+  align-items: center;     /* untuk vertical center */
+  text-align: center;
+}
+
+.login-right {
+  position: relative; /* penting agar tombol bisa diposisikan relatif terhadap kontainer ini */
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ab6a42;
+  color: #642904;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #642904;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(171, 106, 66, 0.3);
+}
+
+.left {
+  background: linear-gradient(to top, #ab6a42, #fff);
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  color: #ab6a42;
+}
+
+.left h1 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.left img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right {
+  background-color: #fff;
+  width: 50%;
+  padding: 40px;
+  color: #642904;
+}
+
+.right h2 {
+  margin-bottom: 20px;
+}
+
+.social-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ab6a42;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ab6a42;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.or {
+  text-align: center;
+  margin: 20px 0;
+  color: #ab6a42;
+}
+
+form .input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ab6a42;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #642904;
+}
+
+.checkbox {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.checkbox a {
+  color: #ab6a42;
+  text-decoration: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ab6a42;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
